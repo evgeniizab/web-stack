@@ -35,6 +35,7 @@ services:
       - ROOT=${DOCKER_NGINX_ROOT}
       - CONFIG=${DOCKER_NGINX_CONFIG}
       - PHP_HOST=${DOCKER_PROJECT_NAME}_php
+      - NODEJS_HOST=${DOCKER_PROJECT_NAME}_nodejs
     command: /scripts/nginx.sh
 
   redis:
